@@ -6,16 +6,16 @@
 </head>
 <body>
     <div id="app">
-        <p v-if="waifu > 10">{{waifu}} tersedia!</p>
-        <p v-else-if="waifu > 0">Ayo!, tinggal {{waifu}} waifu yang tersisa!</p>
-        <p v-else=>Maaf kami kehabisan waifu!!</p>
+        <p v-if="item > 10">{{item}} tersedia!</p>
+        <p v-else-if="item > 0">Ayo!, tinggal {{item}} barang yang tersisa!</p>
+        <p v-else=>Maaf kami kehabisan barang!!</p>
     </div>
 
     <script>
         var app = new Vue ({
             el   : "#app",
             data : {
-                waifu : 3
+                item : 3
             }
         })
     </script>
