@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <title>Latihan 2</title>
+</head>
+<body>
+    <div id = "app">
+        <p>{{greet('Adam')}}</p>
+    </div>
+
+    <script>
+        var app = new Vue({
+            el      : "#app",
+            methods : {
+                greet : function(name){
+                    return 'Ohayou, ' + name + ' onii chan~';
+                }
+            }
+        })
+    </script>
+</body>
+</html>

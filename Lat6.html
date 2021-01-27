@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Latihan 6</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+    <div id="app">
+        <ol>
+            <li v-for="(w, index) in waifu" :key="index">
+                Waifu ke {{index+1}}, {{w}}
+            </li>
+        </ol>
+    </div>
+
+    <script>
+        var app = new Vue ({
+            el   : "#app",
+            data : {
+                waifu : ["Arisa", "Cocoa", "Kasumi", "Fubuki", "Yukiho", "Kasuga"]
+            }
+        })
+    </script>
+</body>
+</html>

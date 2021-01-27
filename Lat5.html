@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Latihan 5</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+    <div id="app">
+        <p v-if="waifu > 10">{{waifu}} tersedia!</p>
+        <p v-else-if="waifu > 0">Ayo!, tinggal {{waifu}} waifu yang tersisa!</p>
+        <p v-else=>Maaf kami kehabisan waifu!!</p>
+    </div>
+
+    <script>
+        var app = new Vue ({
+            el   : "#app",
+            data : {
+                waifu : 3
+            }
+        })
+    </script>
+</body>
+</html>

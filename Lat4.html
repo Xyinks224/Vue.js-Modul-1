@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Latihan 4</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+    <div id = "app">
+        <form>
+            <input type="text" placeholder="Anata no namae kaete kudasai" v-model="namae">
+            <br> <br>
+            <label>Watashi no namae wa: {{namae}}</label>
+        </form>
+    </div>
+
+    <script>
+        var app = new Vue ({
+            el   : "#app",
+            data : {
+                namae : ""
+            }
+        })
+
+    </script>
+</body>
+</html>
